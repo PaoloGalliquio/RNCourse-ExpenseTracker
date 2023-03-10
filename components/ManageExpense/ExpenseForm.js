@@ -23,7 +23,7 @@ export default function ExpenseForm({submitButtonLabel, onCancel, onSubmit, defa
   });
 
   function inputChangedHandler(inputIdentifier, enteredValue) {
-    setInput((curInputs) => {
+    setInputs((curInputs) => {
       return {
         ...curInputs,
         [inputIdentifier]: { value: enteredValue, isValid: true}
